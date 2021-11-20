@@ -1,0 +1,60 @@
+GET http://localhost:3000/spiele
+###
+
+GET http://localhost:3000/spiele/5
+###
+Delete http://localhost:3000/spiele/6
+
+###
+POST http://localhost:3000/spiele
+Content-Type: application/json
+
+{
+      "id": 5,
+      "stadion": "Sportanlage Peichberg",
+      "datum": "2021-11-12",
+      "zeit": "15:00:00",
+      "heim": 4,
+      "auswaerts": 1
+    }
+
+###
+PATCH http://localhost:3000/spiele/5
+Content-Type: application/json
+
+{
+     
+      "zeit": "14:00:00",
+      "heim": 2
+    }
+
+
+
+
+
+###
+
+GET http://localhost:3000/mannschaften
+###
+
+GET http://localhost:3000/mannschaften/6
+###
+Delete http://localhost:3000/mannschaften/6
+
+###
+POST http://localhost:3000/mannschaften
+Content-Type: application/json
+
+{
+      "id": 6,
+      "name": "Türnitz",
+      "liga": "2. Klasse Traisental/AV"
+    }
+
+###
+PATCH http://localhost:3000/mannschaften/17
+Content-Type: application/json
+
+{
+      "name": "Türnitz2"
+}
