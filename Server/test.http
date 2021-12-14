@@ -24,8 +24,11 @@ Content-Type: application/json
 
 {
      
-      "zeit": "14:00:00",
-      "heim": 2
+      "stadion": "Sportanlage Peichberg",
+      "datum": "2021-11-12",
+      "zeit": "15:00:00",
+      "heim": 4,
+      "auswaerts": 1
     }
 
 
